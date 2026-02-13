@@ -1,4 +1,4 @@
-import { createContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { createContext, useEffect, useLayoutEffect, useMemo, useState, type ReactNode } from "react";
 import {
   BrowserRouter,
   Navigate,
@@ -11,7 +11,7 @@ import CommonFooter from "./components/CommonFooter";
 import CommonNavbar from "./components/CommonNavbar";
 import Admission from "./Admission/admission";
 import Contact from "./contact/contact";
-import Courses from "./courses/courses";
+import Courses from "./courses/course";
 import Fees from "./fees/fees";
 import Home from "./home/home";
 import WhyUdaan from "./Why_udan'/why";
@@ -52,8 +52,8 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, [pathname]);
 
   return null;
@@ -96,6 +96,12 @@ const NotFound = () => {
 };
 
 const App = () => {
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+  }, []);
+
   return (
     <ThemeProvider>
       <BrowserRouter>

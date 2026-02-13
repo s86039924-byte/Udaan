@@ -1,38 +1,9 @@
 import React from 'react';
-import './Scholarships.css';
+import './admission.css';
 
 const Scholarships: React.FC = () => {
   return (
-    <div className="page-wrapper">
-      {/* Navigation */}
-      <nav className="navbar">
-        <div className="nav-container">
-          <div className="nav-content">
-            {/* Logo */}
-            <div className="logo-section">
-              <img
-                alt="Udaan Institute Logo"
-                className="logo-img"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhQ5QYvX6dV7A53pieVNeL81SrbQRWt2TcnG4TOlDF_ErsRffehqaGKDQtS8_t0p5OmOy7hcjU-cmU54QB1p3IqTWDv7xqyV2WkH_sBrSdOfiCP5fbTj1ZR2UO84v1cgWAK7LufDYLDzu3yX-Z4s3DfZC-tx8tw-RK1JSxx0DpM4-IQm3ZiFdrR1QszuJtJn8AVNTUY1-b7_pHMoWASGAo3stAlZMlvGwZh-zCdR6rlBNrlr9jT9aKEhObziPmEl6oLXRUZbU7qIs"
-              />
-              <div className="logo-text-wrapper">
-                <span className="logo-text">UDAAN</span>
-                <span className="logo-subtitle">Institute</span>
-              </div>
-            </div>
-
-            {/* Desktop Menu */}
-            <div className="nav-menu">
-              <a className="nav-link" href="#">Home</a>
-              <a className="nav-link" href="#">Courses</a>
-              <a className="nav-link" href="#">Faculty</a>
-              <a className="nav-link active" href="#">Admissions</a>
-              <a className="btn-enroll" href="#">Enroll Now</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
+    <div className="page-wrapper admission-page">
       {/* Hero Section */}
       <div className="hero-section">
         <div className="hero-bg-gradient"></div>
@@ -180,74 +151,6 @@ const Scholarships: React.FC = () => {
         </div>
       </section>
 
-      {/* Fee Structure Section */}
-      <section className="fee-section">
-        <div className="section-container">
-          <div className="fee-header">
-            <h2 className="section-title">Fee Structure Overview</h2>
-            <p className="section-description">
-              Transparent pricing for our comprehensive coaching programs.
-            </p>
-            <a href="#" className="download-link">Download Detailed Brochure ↓</a>
-          </div>
-
-          <div className="table-container">
-            <table className="fee-table">
-              <thead>
-                <tr>
-                  <th>Course / Class</th>
-                  <th>One-Time Payment</th>
-                  <th>Installment Type</th>
-                  <th>Total Fee</th>
-                  <th className="text-center">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="course-cell">Foundation Class 8th</td>
-                  <td className="amount-cell">₹30,000</td>
-                  <td className="installment-cell">2 Installments</td>
-                  <td className="total-cell">₹35,000</td>
-                  <td className="action-cell">
-                    <button className="btn-view">View Breakup</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="course-cell">JEE Class 11th</td>
-                  <td className="amount-cell">₹1,00,000</td>
-                  <td className="installment-cell">3 Installments</td>
-                  <td className="total-cell">₹1,25,000</td>
-                  <td className="action-cell">
-                    <button className="btn-view">View Breakup</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="course-cell">NEET Class 11th</td>
-                  <td className="amount-cell">₹1,00,000</td>
-                  <td className="installment-cell">3 Installments</td>
-                  <td className="total-cell">₹1,25,000</td>
-                  <td className="action-cell">
-                    <button className="btn-view">View Breakup</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="course-cell">JEE/NEET Repeater</td>
-                  <td className="amount-cell">₹70,000</td>
-                  <td className="installment-cell">3 Installments</td>
-                  <td className="total-cell">₹85,000</td>
-                  <td className="action-cell">
-                    <button className="btn-view">View Breakup</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="fee-note">
-            * Fees are subject to change. Scholarship discounts are applied on the Total Fee. Hostel fees are separate.
-          </p>
-        </div>
-      </section>
-
       {/* Guidelines Section */}
       <div className="guidelines-section">
         <div className="guidelines-container">
@@ -303,72 +206,6 @@ const Scholarships: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-container">
-          <div className="footer-grid">
-            {/* Brand Column */}
-            <div className="footer-brand-col">
-              <div className="footer-brand">
-                <span className="footer-brand-text">UDAAN</span>
-                <span className="footer-brand-subtitle">Institute</span>
-              </div>
-              <p className="footer-tagline">
-                Empowering Dreams. Shaping Futures. We provide structured and result-oriented coaching programs designed to build strong academic foundations.
-              </p>
-              <div className="footer-social">
-                <a href="#" className="social-icon">
-                  <span className="material-icons-outlined">facebook</span>
-                </a>
-                <a href="#" className="social-icon">
-                  <span className="material-icons-outlined">email</span>
-                </a>
-                <a href="#" className="social-icon">
-                  <span className="material-icons-outlined">chat</span>
-                </a>
-              </div>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="footer-heading">Quick Links</h4>
-              <ul className="footer-links">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Scholarship (UPSE)</a></li>
-                <li><a href="#">Results</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h4 className="footer-heading">Contact Us</h4>
-              <ul className="footer-contact">
-                <li className="contact-item">
-                  <span className="material-icons-outlined contact-icon">location_on</span>
-                  <span>Udaan Institute, Inamdar Nagar, Orchid City, Bhigwan Road, Baramati, Pune - 413102</span>
-                </li>
-                <li className="contact-item">
-                  <span className="material-icons-outlined contact-icon">phone</span>
-                  <span>+91-8793154040</span>
-                </li>
-                <li className="contact-item">
-                  <span className="material-icons-outlined contact-icon">email</span>
-                  <span>
-                    <a href="mailto:contact@udaaninstitute.com">contact@udaaninstitute.com</a>
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="footer-bottom">
-            <p>© 2023 Udaan Coaching Institute. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
