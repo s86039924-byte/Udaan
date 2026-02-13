@@ -1,25 +1,8 @@
-import React from "react";
 import "./contact.css";
 
 const Contact = () => {
   return (
     <div className="page">
-
-      {/* NAV */}
-      <nav className="nav">
-        <div className="logo">
-          <span className="logo-main">UDAAN</span>
-          <span className="logo-sub">Institute</span>
-        </div>
-
-        <div className="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Courses</a>
-          <a href="#">Faculty</a>
-          <a href="#" className="active">Contact</a>
-        </div>
-      </nav>
-
       {/* HERO */}
       <section className="hero">
         <h1>Get in Touch</h1>
@@ -105,11 +88,6 @@ const Contact = () => {
           <p>Sunday: 10:00 AM – 2:00 PM</p>
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer className="footer">
-        <p>© 2023 Udaan Coaching Institute</p>
-      </footer>
 
     </div>
   );
