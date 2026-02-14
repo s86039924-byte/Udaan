@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './home.css';
 import HomeHero from "./hero/HomeHero";
 
@@ -110,7 +111,7 @@ const UdaanInstitute: React.FC = () => {
                 <li>Comprehensive Syllabus</li>
                 <li>Mock Tests & Analysis</li>
               </ul>
-              <a href="/courses" className="course-link">Learn More</a>
+              <Link to="/courses" className="course-link">Know More</Link>
             </div>
 
             {/* Course 2 - NEET */}
@@ -123,7 +124,7 @@ const UdaanInstitute: React.FC = () => {
                 <li>NCERT Focused</li>
                 <li>Botany-Priority Team</li>
               </ul>
-              <a href="/courses" className="course-link">Learn More</a>
+              <Link to="/courses" className="course-link">Know More</Link>
             </div>
 
             {/* Course 3 - Foundation */}
@@ -136,7 +137,7 @@ const UdaanInstitute: React.FC = () => {
                 <li>Early JEE/NEET Prep</li>
                 <li>Strong Concept-Base</li>
               </ul>
-              <a href="/courses" className="course-link">Learn More</a>
+              <Link to="/courses" className="course-link">Know More</Link>
             </div>
 
             {/* Course 4 - Board Support */}
@@ -149,7 +150,21 @@ const UdaanInstitute: React.FC = () => {
                 <li>Syllabus Prep</li>
                 <li>Regular Practice</li>
               </ul>
-              <a href="/courses" className="course-link">Learn More</a>
+              <Link to="/courses" className="course-link">Know More</Link>
+            </div>
+
+            {/* Course 5 - MHT-CET */}
+            <div className="course-card">
+              <div className="course-icon green-course">
+                <span className="material-icons">track_changes</span>
+              </div>
+              <h3 className="course-name">MHT-CET</h3>
+              <ul className="course-features">
+                <li>PCM-Focused Strategy</li>
+                <li>Topic-Wise Practice</li>
+                <li>Exam-Oriented Mock Tests</li>
+              </ul>
+              <Link to="/courses" className="course-link">Know More</Link>
             </div>
           </div>
         </div>
@@ -161,14 +176,11 @@ const UdaanInstitute: React.FC = () => {
           <div className="faculty-content">
             <div className="faculty-image">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKC12UElOQo0npFrrjBCIuV2eAdpbHHjZTKPM8mzzDqD3SuONSbZlFmocyHfB2g4dIh5wKwqiY1VHTbMQJcplQsm3eIJga4wska-bAWeTnQ4vazjS8P6vwm4SjUol8b6820LkUbUAYSHdc0dRfbA5tMq-8tHn9E0EFFFb_6oij5WaGLqAq4X39jui7CeDCZapOSwC7FBY5S-kuXqlED0Rns_i_UMWtGUSFwPNk7AEd3U5aznR90f5Bzyuasq2UtdH5RVn38GmtbXQ"
+                src="/foot.jpg"
                 alt="Faculty member"
                 className="faculty-img"
               />
-              <div className="experience-badge">
-                <div className="badge-number">10+</div>
-                <div className="badge-text">Years Experience</div>
-              </div>
+              
             </div>
 
             <div className="faculty-info">
@@ -231,7 +243,14 @@ const UdaanInstitute: React.FC = () => {
               </p>
             </div>
             <div>
-              <button className="scholarship-btn">Apply for Scholarship</button>
+              <a
+                className="scholarship-btn"
+                href="https://forms.gle/jv8b1o5ByFU99txz6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply for Scholarship
+              </a>
             </div>
           </div>
         </div>

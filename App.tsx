@@ -67,7 +67,9 @@ const AppLayout = () => {
     <>
       <ScrollToTop />
       {!hideNavigationAndFooter && <CommonNavbar activePath={location.pathname} />}
-      <Outlet />
+      <div className={`app-content${hideNavigationAndFooter ? " app-content--no-nav" : ""}`}>
+        <Outlet />
+      </div>
       {!hideNavigationAndFooter && <CommonFooter />}
     </>
   );

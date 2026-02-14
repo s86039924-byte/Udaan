@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './course.css';
 
 const Courses: React.FC = () => {
@@ -27,6 +28,44 @@ const Courses: React.FC = () => {
         <div className="content-container">
           {/* Courses Grid */}
           <div className="courses-grid">
+            {/* Udaan Dost Card - Full Width (Top) */}
+            <div className="udaan-dost-card">
+              <div className="udaan-dost-glow"></div>
+
+              <div className="udaan-dost-content">
+                <div className="udaan-dost-info">
+                  <div className="exclusive-badge">
+                    <span className="badge-text">Exclusive</span>
+                    <span className="badge-subtitle">AI-Powered Learning</span>
+                  </div>
+                  <h3 className="udaan-dost-title">Udaan Dost - Laptop Program</h3>
+                  <p className="udaan-dost-description">
+                    Experience our unique <span className="highlight-text">AI-powered, laptop-based learning system</span>.
+                    Think of it as a personal tutor for every student-ensuring focused study, discipline, and detailed performance tracking.
+                  </p>
+                  <div className="udaan-dost-features">
+                    <div className="feature-tag">
+                      <span className="material-icons">laptop_chromebook</span>
+                      <span>One Laptop, One Purpose</span>
+                    </div>
+                    <div className="feature-tag">
+                      <span className="material-icons">analytics</span>
+                      <span>Performance Tracking</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="udaan-dost-visual">
+                  <span className="material-icons visual-icon">smart_toy</span>
+                  <div className="visual-cta">
+                    <Link className="circle-btn" to="/admission">
+                      <span className="material-icons">arrow_forward</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* JEE Course Card */}
             <div className="course-card">
               <div className="course-header blue-header">
@@ -175,43 +214,43 @@ const Courses: React.FC = () => {
               </div>
             </div>
 
-            {/* Udaan Dost Card - Full Width */}
-            <div className="udaan-dost-card">
-              <div className="udaan-dost-glow"></div>
-              
-              <div className="udaan-dost-content">
-                <div className="udaan-dost-info">
-                  <div className="exclusive-badge">
-                    <span className="badge-text">Exclusive</span>
-                    <span className="badge-subtitle">AI-Powered Learning</span>
-                  </div>
-                  <h3 className="udaan-dost-title">Udaan Dost - Laptop Program</h3>
-                  <p className="udaan-dost-description">
-                    Experience our unique <span className="highlight-text">AI-powered, laptop-based learning system</span>.
-                    Think of it as a personal tutor for every student—ensuring focused study, discipline, and detailed performance tracking.
-                  </p>
-                  <div className="udaan-dost-features">
-                    <div className="feature-tag">
-                      <span className="material-icons">laptop_chromebook</span>
-                      <span>One Laptop, One Purpose</span>
-                    </div>
-                    <div className="feature-tag">
-                      <span className="material-icons">analytics</span>
-                      <span>Performance Tracking</span>
-                    </div>
-                  </div>
+            {/* MHT-CET Course Card */}
+            <div className="course-card">
+              <div className="course-header blue-header">
+                <div className="course-bg-overlay"></div>
+                <div className="course-icon-wrapper">
+                  <span className="material-icons course-icon">track_changes</span>
                 </div>
-
-                <div className="udaan-dost-visual">
-                  <span className="material-icons visual-icon">smart_toy</span>
-                  <div className="visual-cta">
-                    <a className="circle-btn" href="#">
-                      <span className="material-icons">arrow_forward</span>
-                    </a>
-                  </div>
+                <div className="course-badge">
+                  <span>For Maharashtra CET Aspirants</span>
                 </div>
               </div>
+              <div className="course-body">
+                <div className="course-title-section">
+                  <h3 className="course-title blue-title">MHT-CET</h3>
+                  <span className="material-icons title-icon blue-icon">insights</span>
+                </div>
+                <p className="course-description">
+                  Focused preparation for MHT-CET with a PCM-first approach, speed-building practice, and
+                  exam-pattern based sessions.
+                </p>
+                <ul className="course-features">
+                  <li>
+                    <span className="material-icons feature-check">check_circle</span>
+                    <span>State Board + CET Alignment</span>
+                  </li>
+                  <li>
+                    <span className="material-icons feature-check">check_circle</span>
+                    <span>High-Speed Problem Solving</span>
+                  </li>
+                  <li>
+                    <span className="material-icons feature-check">check_circle</span>
+                    <span>Mock Tests with Rank Analysis</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+
           </div>
         </div>
       </main>
@@ -228,10 +267,10 @@ const Courses: React.FC = () => {
               </p>
             </div>
             <div>
-              <a className="banner-btn" href="#">
+              <Link className="banner-btn" to="/admission">
                 Apply for Scholarship
                 <span className="material-icons">edit_note</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

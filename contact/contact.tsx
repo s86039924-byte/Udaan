@@ -1,6 +1,12 @@
 import "./contact.css";
 
 const Contact = () => {
+  const autoResize = (event: React.FormEvent<HTMLTextAreaElement>) => {
+    const target = event.currentTarget;
+    target.style.height = "auto";
+    target.style.height = `${target.scrollHeight}px`;
+  };
+
   return (
     <div className="page contact-page">
       {/* HERO */}
@@ -18,23 +24,66 @@ const Contact = () => {
         <div className="card">
           <h2>Contact Details</h2>
 
-          <div className="info">
-            <h4>Visit Us</h4>
-            <p>
-              Inamdar Nagar, Orchid City, <br />
-              Bhigwan Road, Baramati, Pune - 413102
-            </p>
-          </div>
+          <div className="contact-details-layout">
+            <div>
+              <div className="info">
+                <h4>Visit Us</h4>
+                <p>
+                  Inamdar Nagar, Orchid City, <br />
+                  Bhigwan Road, Baramati, Pune - 413102
+                </p>
+              </div>
 
-          <div className="info">
-            <h4>Call Us</h4>
-            <p>+91 87931 54040</p>
-            <p>+91 87931 64040</p>
-          </div>
+              <div className="info">
+                <h4>Call Us</h4>
+                <p>+91 87931 54040</p>
+                <p>+91 87931 64040</p>
+              </div>
 
-          <div className="info">
-            <h4>Email Us</h4>
-            <p>udaan@udaan-institute.com</p>
+              <div className="info">
+                <h4>Email Us</h4>
+                <p>udaan@udaan-institute.com</p>
+              </div>
+            </div>
+
+            <div className="social-panel" aria-label="Social Links">
+              <a
+                href="https://www.facebook.com/profile.php?id=61586847644002&sk=directory_personal_details"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <span className="material-icons">facebook</span>
+                Facebook
+              </a>
+              <a
+                href="https://www.instagram.com/uae_institute/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <span className="material-icons">photo_camera</span>
+                Instagram
+              </a>
+              <a
+                href="https://youtube.com/@udaan_academy-97?si=4tzNZatLWM-_QVlC"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <span className="material-icons">smart_display</span>
+                YouTube
+              </a>
+              <a
+                href="https://wa.me/918793154040"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <span className="material-icons">chat</span>
+                WhatsApp
+              </a>
+            </div>
           </div>
         </div>
 
@@ -43,17 +92,18 @@ const Contact = () => {
           <h2>Send a Message</h2>
 
           <form className="form">
-            <input type="text" placeholder="Student/Parent Name" />
+            <input type="text" placeholder="Student Name" />
+            <input type="text" placeholder="Parent Name" />
             <input type="tel" placeholder="Phone Number" />
-
-            <select>
-              <option>Select Course</option>
-              <option>JEE (Main & Advanced)</option>
-              <option>NEET (UG)</option>
-              <option>Foundation (8th-10th)</option>
-            </select>
-
-            <textarea rows={4} placeholder="Your Message"></textarea>
+            <input
+              type="tel"
+              placeholder="Mobile Number (10 digits)"
+              pattern="[0-9]{10}"
+              inputMode="numeric"
+              maxLength={10}
+              required
+            />
+            <textarea rows={4} placeholder="Your Query" onInput={autoResize}></textarea>
 
             <button type="submit" className="btn-primary">
               Send Message

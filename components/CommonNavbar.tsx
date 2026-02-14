@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import "./layout.css";
+import "./navbar.css";
 
 type CommonNavbarProps = {
   activePath?: string;
@@ -8,10 +8,10 @@ type CommonNavbarProps = {
 
 const navItems = [
   { href: "/home", label: "Home" },
+  { href: "/why-udaan", label: "Why Udaan" },
+  { href: "/admission", label: "Admission" },
   { href: "/courses", label: "Courses" },
   { href: "/fees", label: "Fees" },
-  { href: "/admission", label: "Admission" },
-  { href: "/why-udaan", label: "Why Udaan" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -24,8 +24,11 @@ const CommonNavbar = ({ activePath }: CommonNavbarProps) => {
     <header className="common-nav">
       <div className="common-nav__inner">
         <Link className="common-nav__brand" to="/home" aria-label="Udaan home">
-          <span className="common-nav__logo-slot">Logo</span>
-          <span className="common-nav__brand-text">UDAAN Institute</span>
+          <img
+            className="common-nav__logo-slot"
+            src="/udaan_logo.png"
+            alt="Udaan Institute logo"
+          />
         </Link>
 
         <nav className="common-nav__links" aria-label="Primary">

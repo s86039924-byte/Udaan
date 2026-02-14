@@ -33,6 +33,41 @@
   margin-bottom: 20px;
 }
 
+.contact-page .contact-details-layout {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: start;
+}
+
+.contact-page .social-panel {
+  display: grid;
+  gap: 10px;
+  min-width: 170px;
+}
+
+.contact-page .social-panel a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #12325f;
+  background: #eef4ff;
+  border: 1px solid #d4dff2;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 600;
+}
+
+.contact-page .social-panel a .material-icons {
+  font-size: 1.12rem;
+}
+
+.contact-page .social-panel a:hover {
+  background: #dfeaff;
+  border-color: #bfd0ef;
+}
+
 .contact-page .form input,
 .contact-page .form select,
 .contact-page .form textarea {
@@ -41,6 +76,11 @@
   margin-bottom: 15px;
   border-radius: 8px;
   border: 1px solid #ccc;
+}
+
+.contact-page .form textarea {
+  resize: none;
+  overflow: hidden;
 }
 
 .contact-page .btn-primary {
@@ -80,6 +120,20 @@
 @media (max-width: 768px) {
   .contact-page .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-page .contact-details-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page .social-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-width: 0;
+  }
+
+  .contact-page .social-panel a {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .contact-page .hero {

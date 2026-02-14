@@ -338,8 +338,8 @@ const FeeStructure: React.FC = () => {
               <a className="cta-btn primary" href="tel:+918793154040">
                 <span className="material-icons-round">call</span> Call +91-8793154040
               </a>
-              <a className="cta-btn secondary" href="mailto:contact@udaaninstitute.com">
-                <span className="material-icons-round">email</span> Email Us
+              <a className="cta-btn secondary" href="mailto:udaan@udaan-institute.com">
+                <span className="material-icons-round">email</span> Email Us: udaan@udaan-institute.com
               </a>
             </div>
           </div>

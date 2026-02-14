@@ -20,7 +20,12 @@ const Scholarships: React.FC = () => {
                 <strong>Udaan Pratibha Search Exam (UPSE)</strong> and secure up to 100% scholarship for JEE & NEET coaching.
               </p>
               <div className="hero-buttons">
-                <a className="btn-primary" href="#upse-details">
+                <a
+                  className="btn-primary"
+                  href="https://forms.gle/jv8b1o5ByFU99txz6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Register for UPSE
                 </a>
                 <a className="btn-secondary" href="#process">
@@ -34,7 +39,7 @@ const Scholarships: React.FC = () => {
               <img
                 alt="Students Studying Group"
                 className="hero-image"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg5WodSwqVrT_CIHfVL5fN8Qb4kb46iROa-phMWmQnzDe_ySakvYmHBvkvO9EWI-_3Q550Yd6Blg_zlm1UFlpkBDZ2Lzeq_D_HISW4qhSdLZm5NOZNtFxDURNa-Z8ofkUbfvFhEjYBg8DsSEYE3g03OBTJsg7QdT8asj_8yeNRdFACwXxPFjT8UkpW0gD_FQBBS9-ONQjt96LMJlfx5txFkGPRui-Cy-jqq6MEM1CVxsEowvm-oOjdtbfp0td8_N59OxkjbrtN2L0"
+                src="cheer.png"
               />
             </div>
           </div>
@@ -146,7 +151,14 @@ const Scholarships: React.FC = () => {
           </div>
 
           <div className="roadmap-cta">
-            <button className="btn-roadmap">Apply for Admission Now →</button>
+            <a
+              className="btn-roadmap"
+              href="https://forms.gle/jv8b1o5ByFU99txz6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Apply for Admission Now →
+            </a>
           </div>
         </div>
       </section>
@@ -198,7 +210,14 @@ const Scholarships: React.FC = () => {
             Join Udaan Institute and get the best guidance from IITian and Doctor faculty.
           </p>
           <div className="cta-buttons">
-            <a className="btn-cta-primary" href="#">Register for UPSE</a>
+            <a
+              className="btn-cta-primary"
+              href="https://forms.gle/jv8b1o5ByFU99txz6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register for UPSE
+            </a>
             <a className="btn-cta-phone" href="tel:+918793154040">
               <span className="material-icons-outlined">call</span>
               +91-8793154040

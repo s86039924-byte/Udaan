@@ -286,7 +286,7 @@
 
 @media (min-width: 1120px) {
   .courses-page .udaan-dost-card {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 }
 

@@ -124,7 +124,7 @@ const WhyUdaan: React.FC = () => {
             <div className="laptop-image-wrapper">
               <div className="laptop-image-card">
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgLdZdKHCJUwuGkNDm8VhCJZlMVWrLHPIVFvJTukGk7qUdUF5Yw42GhwNHCkAaQm6y5tDtYJb46LKSv7HUCPW4l5V5vOhLABNtTkDqEJQ77k1xfSy-QMTAUCk6KD5fRnwC3CwOABKpDQ"
+                  src="/computer.jpg"
                   alt="Student using laptop for learning"
                   className="laptop-img"
                 />
@@ -200,7 +200,7 @@ const WhyUdaan: React.FC = () => {
               <p className="stat-label">Doubt Support</p>
             </div>
             <div className="stat-item">
-              <p className="stat-number orange-stat">IITian</p>
+              <p className="stat-number orange-stat">Top </p>
               <p className="stat-label">Faculty Team</p>
             </div>
             <div className="stat-item">
@@ -219,7 +219,14 @@ const WhyUdaan: React.FC = () => {
             Join the league of successful students. Admissions are open for JEE & NEET Foundation and Advanced courses.
           </p>
           <div className="cta-buttons">
-            <button className="btn-cta-primary">Apply for Admission</button>
+            <a
+              className="btn-cta-primary"
+              href="https://forms.gle/jv8b1o5ByFU99txz6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Apply for Admission
+            </a>
             <button className="btn-cta-secondary">Download Brochure</button>
           </div>
         </div>
