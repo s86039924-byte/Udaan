@@ -15,6 +15,7 @@ import Courses from "./courses/course";
 import Fees from "./fees/fees";
 import Home from "./home/home";
 import WhyUdaan from "./Why_udan'/why";
+import DostPage from "./dost/page";
 
 type Theme = "light" | "dark";
 
@@ -61,7 +62,7 @@ const ScrollToTop = () => {
 
 const AppLayout = () => {
   const location = useLocation();
-  const hideNavigationAndFooter = location.pathname === "/dost";
+  const hideNavigationAndFooter = location.pathname.startsWith("/dost");
 
   return (
     <>
@@ -72,17 +73,6 @@ const AppLayout = () => {
       </div>
       {!hideNavigationAndFooter && <CommonFooter />}
     </>
-  );
-};
-
-const Dost = () => {
-  return (
-    <main className="page">
-      <section className="hero">
-        <h1>Dost</h1>
-        <p>This route intentionally hides the common navigation and footer.</p>
-      </section>
-    </main>
   );
 };
 
@@ -116,7 +106,7 @@ const App = () => {
             <Route path="/admission" element={<Admission />} />
             <Route path="/why-udaan" element={<WhyUdaan />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/dost" element={<Dost />} />
+            <Route path="/dost" element={<DostPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

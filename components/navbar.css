@@ -6,14 +6,23 @@ body,
   width: 100%;
   min-height: 100%;
   overflow-x: hidden;
-}
-
-html {
-  scrollbar-gutter: stable;
+  background: #eef1f6;
 }
 
 body {
   overflow-y: auto;
+}
+
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 :root {
@@ -103,12 +112,14 @@ body {
 
 .common-nav__links a.active {
   color: #472347;
-  background: #d7c1de;
-  box-shadow: inset 0 0 0 1px #c0a3cc;
+  background: #bcf5bc;
+  box-shadow: inset 0 0 0 1px greenyellow;
 }
 
 .common-nav__actions {
   min-width: 220px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .common-nav__menu-btn {
@@ -142,19 +153,22 @@ body {
 .common-nav__drawer {
   position: fixed;
   top: 0;
-  right: -290px;
+  right: 0;
   width: 280px;
   height: 100vh;
   background: #f7f8fb;
   border-left: 1px solid #d5deea;
   box-shadow: -8px 0 20px rgba(0, 0, 0, 0.16);
-  transition: right 0.24s ease;
+  transform: translateX(100%);
+  transition: transform 0.24s ease;
   z-index: 60;
   padding: 14px 14px 20px;
+  pointer-events: none;
 }
 
 .common-nav__drawer.open {
-  right: 0;
+  transform: translateX(0);
+  pointer-events: auto;
 }
 
 .common-nav__drawer-head {
@@ -230,9 +244,15 @@ body {
   }
 
   .common-nav__brand-text,
-  .common-nav__links,
-  .common-nav__actions {
+  .common-nav__links {
     display: none;
+  }
+
+  .common-nav__actions {
+    min-width: 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .common-nav__menu-btn {
@@ -250,8 +270,8 @@ body {
 
   .common-nav__drawer {
     top: 0;
-    right: -84%;
-    width: min(84vw, 320px);
+    right: 0;
+    width: min(72vw, 280px);
     z-index: 1200;
     padding: 14px 14px 20px;
   }

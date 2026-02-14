@@ -1,0 +1,81 @@
+.dost-button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 1.35rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  background: #0b2f6b;
+  color: #ffffff;
+  font-family: "Lexend", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  box-shadow: 0 10px 22px rgba(11, 47, 107, 0.38);
+  transition: transform 180ms ease, box-shadow 220ms ease, filter 220ms ease;
+  z-index: 1;
+}
+
+.dost-button::before {
+  content: "";
+  position: absolute;
+  top: -140%;
+  left: -30%;
+  width: 60%;
+  height: 320%;
+  transform: rotate(20deg);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  transition: left 420ms ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.dost-button:hover {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 0 0 2px rgba(41, 121, 255, 0.2), 0 12px 26px rgba(11, 47, 107, 0.35),
+    0 8px 18px rgba(11, 47, 107, 0.45);
+  filter: saturate(1.08);
+}
+
+.dost-button:hover::before {
+  left: 120%;
+}
+
+.dost-button:focus-visible {
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 0 0 3px rgba(41, 121, 255, 0.3), 0 10px 22px rgba(11, 47, 107, 0.38);
+}
+
+.dost-button:hover,
+.dost-button:focus,
+.dost-button:active,
+.dost-button:visited {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+
+.dost-button:focus {
+  outline: none;
+  border-radius: 8px;
+}
+
+.dost-button:active {
+  border-radius: 8px;
+  transform: translateY(0) scale(0.99);
+}
+
+@media (max-width: 1023px) {
+  .dost-button {
+    order: 1;
+    height: 40px;
+    padding: 0 0.9rem;
+    border-radius: 8px;
+    font-size: 0.84rem;
+    box-shadow: 0 6px 14px rgba(11, 47, 107, 0.3);
+  }
+}

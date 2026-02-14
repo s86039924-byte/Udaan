@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import "./layout.css";
 
 const CommonFooter = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="common-footer">
       <div className="common-footer__inner">
@@ -72,19 +76,19 @@ const CommonFooter = () => {
           <h4>Courses</h4>
           <ul>
             <li>
-              <Link to="/courses">Foundation</Link>
+              <Link to="/courses" onClick={scrollToTop}>Foundation</Link>
             </li>
             <li>
-              <Link to="/courses">Crash Course</Link>
+              <Link to="/courses" onClick={scrollToTop}>Crash Course</Link>
             </li>
             <li>
-              <Link to="/courses">NEET</Link>
+              <Link to="/courses" onClick={scrollToTop}>NEET</Link>
             </li>
             <li>
-              <Link to="/courses">IIT-JEE</Link>
+              <Link to="/courses" onClick={scrollToTop}>IIT-JEE</Link>
             </li>
             <li>
-              <Link to="/courses">MHT-CET</Link>
+              <Link to="/courses" onClick={scrollToTop}>MHT-CET</Link>
             </li>
           </ul>
         </section>

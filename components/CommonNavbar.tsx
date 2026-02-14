@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
+import "../dost/dost-button.css";
 
 type CommonNavbarProps = {
   activePath?: string;
@@ -43,7 +44,11 @@ const CommonNavbar = ({ activePath }: CommonNavbarProps) => {
           ))}
         </nav>
 
-        <div className="common-nav__actions" />
+        <div className="common-nav__actions">
+          <Link to="/dost" className="dost-button">
+            Dost
+          </Link>
+        </div>
 
         <button
           type="button"

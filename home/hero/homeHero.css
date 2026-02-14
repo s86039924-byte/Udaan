@@ -155,6 +155,10 @@
     padding-bottom: 56px;
   }
 
+  .home-hero__announcement-track {
+    animation-duration: 12s;
+  }
+
   .home-hero__announcement-item {
     font-size: 0.9rem;
     padding: 9px 24px;
