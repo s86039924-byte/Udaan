@@ -45,7 +45,7 @@ const FeeStructure: React.FC = () => {
                   <span className="material-icons-round">school</span>
                   Course Fees
                 </h3>
-                <span className="update-badge">Updated for 2024-25</span>
+                <span className="update-badge">Updated for 2026-27</span>
               </div>
 
               <div className="table-container">

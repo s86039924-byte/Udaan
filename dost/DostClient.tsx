@@ -39,7 +39,7 @@ export default function DostClient() {
 
     const [iframeSrc, setIframeSrc] = useState<string | null>(null);
 
-    const loginUrl = useMemo(() => `${ACAZDA_ORIGIN}/login?ref=scubus`, []);
+    const loginUrl = useMemo(() => `${ACAZDA_ORIGIN}/login?ref=udaan`, []);
 
     const signupUrl = (alpha: string, beta: string) =>
         `${ACAZDA_ORIGIN}/login?alpha=${encodeURIComponent(alpha)}&beta=${encodeURIComponent(beta)}`;

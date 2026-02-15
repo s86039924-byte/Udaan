@@ -227,7 +227,14 @@ const WhyUdaan: React.FC = () => {
             >
               Apply for Admission
             </a>
-            <button className="btn-cta-secondary">Download Brochure</button>
+            <a
+              className="btn-cta-secondary"
+              href="https://drive.google.com/file/d/1cQqQB1WYg53L0Yc9PlQAPgWzNfjRrt7d/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Brochure
+            </a>
           </div>
         </div>
       </section>
