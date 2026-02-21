@@ -132,6 +132,14 @@ const Contact = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3789.589874837894!2d74.60678977508085!3d18.15655518287752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3758a01121855%3A0x67c0500e57602f92!2sUdaan%20Coaching%20Institute!5e0!3m2!1sen!2sin!4v1698765432100!5m2!1sen!2sin"
           loading="lazy"
         ></iframe>
+        <a
+          className="map-open-link"
+          href="https://maps.app.goo.gl/1fVM2tnd1i69hmtM9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Location in Google Maps
+        </a>
       </section>
 
       {/* VISIT INFO */}

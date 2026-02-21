@@ -126,6 +126,18 @@
   border: none;
 }
 
+.contact-page .map-open-link {
+  display: inline-block;
+  margin: 12px 8% 0;
+  color: #0f3d81;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-page .map-open-link:hover {
+  text-decoration: underline;
+}
+
 .contact-page .visit-section {
   padding: 60px 8%;
   background: #ffffff;
