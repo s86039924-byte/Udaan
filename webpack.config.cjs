@@ -37,8 +37,9 @@ module.exports = {
     }),
   ],
   devServer: {
-    host: "127.0.0.1",
+    host: "0.0.0.0",
     port: Number(process.env.PORT || 30010),
+    allowedHosts: "all",
     historyApiFallback: true,
     hot: true,
     open: false,
