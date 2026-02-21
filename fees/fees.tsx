@@ -310,7 +310,7 @@ const FeeStructure: React.FC = () => {
                 </div>
                 <h3 className="benefit-title">Expert Faculty</h3>
                 <p className="benefit-text">
-                  Classes taught by experienced IITians and Doctors. Personal attention with small batch sizes.
+                  Classes taught by experienced IITian and Doctor faculty. Personal attention with small batch sizes.
                 </p>
               </div>
 

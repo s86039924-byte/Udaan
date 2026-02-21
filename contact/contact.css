@@ -93,6 +93,33 @@
   width: 100%;
 }
 
+.contact-page .form-fallback-text {
+  margin: 14px 0 8px;
+  font-size: 0.92rem;
+  color: #475569;
+  text-align: center;
+}
+
+.contact-page .form-fallback-cta {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #12325f;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 11px 12px;
+  border: 1px solid #12325f;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contact-page .form-fallback-cta:hover {
+  background: #0c274b;
+  transform: translateY(-1px);
+}
+
 .contact-page .map-section iframe {
   width: 100%;
   height: 350px;

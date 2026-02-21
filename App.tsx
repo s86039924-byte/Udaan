@@ -12,8 +12,10 @@ import CommonNavbar from "./components/CommonNavbar";
 import Admission from "./Admission/admission";
 import Contact from "./contact/contact";
 import Courses from "./courses/course";
+import DirectorPage from "./director/director";
 import Fees from "./fees/fees";
 import Home from "./home/home";
+import Testimonial from "./tetimonila/testimonila";
 import WhyUdaan from "./Why_udan'/why";
 import DostPage from "./dost/page";
 
@@ -71,6 +73,38 @@ const AppLayout = () => {
       <div className={`app-content${hideNavigationAndFooter ? " app-content--no-nav" : ""}`}>
         <Outlet />
       </div>
+      {!hideNavigationAndFooter && (
+        <a
+          className="call-float"
+          href="tel:+918793154040"
+          aria-label="Call +91 87931 54040"
+        >
+          <span className="call-float__icon" aria-hidden="true">
+            <img className="call-float__icon-image" src="/call.png" alt="" />
+          </span>
+          <span className="call-float__text">
+            <strong>Call Now</strong>
+            <small>+91 87931 54040</small>
+          </span>
+        </a>
+      )}
+      {!hideNavigationAndFooter && (
+        <a
+          className="whatsapp-float"
+          href="https://wa.me/918793154040"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp at +91 87931 54040"
+        >
+          <span className="whatsapp-float__icon" aria-hidden="true">
+            <img className="whatsapp-float__icon-image" src="/wp.png" alt="" />
+          </span>
+          <span className="whatsapp-float__text">
+            <strong>WhatsApp</strong>
+            <small>+91 87931 54040</small>
+          </span>
+        </a>
+      )}
       {!hideNavigationAndFooter && <CommonFooter />}
     </>
   );
@@ -102,9 +136,12 @@ const App = () => {
             <Route path="/" element={<Navigate to="/home" replace />} />
             <Route path="/home" element={<Home />} />
             <Route path="/courses" element={<Courses />} />
+            <Route path="/our-director" element={<DirectorPage />} />
             <Route path="/fees" element={<Fees />} />
             <Route path="/admission" element={<Admission />} />
             <Route path="/why-udaan" element={<WhyUdaan />} />
+            <Route path="/testimonial" element={<Testimonial />} />
+            <Route path="/tetimonila" element={<Navigate to="/testimonial" replace />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/dost" element={<DostPage />} />
             <Route path="*" element={<NotFound />} />

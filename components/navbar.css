@@ -37,7 +37,8 @@ body::-webkit-scrollbar {
   width: 100%;
   z-index: 9999;
   background: #f4f5f7;
-  border-bottom: 1px solid #dfe3ea;
+  border-bottom: 1px solid #cfd7e3;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.85) inset;
   overflow: visible;
 }
 

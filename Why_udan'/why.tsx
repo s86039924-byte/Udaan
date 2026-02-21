@@ -65,7 +65,7 @@ const WhyUdaan: React.FC = () => {
               </div>
               <h3 className="feature-title">IITian & Doctor Faculty</h3>
               <p className="feature-text">
-                Rare in semi-urban regions, learn directly from experienced IITians and Doctors who have mentored All-India Rankers in JEE & NEET.
+                Rare in semi-urban regions, learn directly from experienced IITian and Doctor faculty who have mentored All-India Rankers in JEE & NEET.
               </p>
             </div>
 

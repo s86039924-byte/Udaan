@@ -12,7 +12,8 @@ const navItems = [
   { href: "/why-udaan", label: "Why Udaan" },
   { href: "/admission", label: "Admission" },
   { href: "/courses", label: "Courses" },
-  { href: "/fees", label: "Fees" },
+  { href: "/our-director", label: "Our Director" },
+  { href: "/testimonial", label: "Testimonial" },
   { href: "/contact", label: "Contact" },
 ];
 

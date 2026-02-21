@@ -108,6 +108,18 @@ const Contact = () => {
             <button type="submit" className="btn-primary">
               Send Message
             </button>
+
+            <p className="form-fallback-text">
+              If the form above does not work, fill this form:
+            </p>
+            <a
+              className="form-fallback-cta"
+              href="https://forms.gle/jv8b1o5ByFU99txz6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fill This Form
+            </a>
           </form>
         </div>
 

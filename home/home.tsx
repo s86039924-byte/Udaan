@@ -38,7 +38,7 @@ const UdaanInstitute: React.FC = () => {
               </div>
               <h3 className="feature-title">Small Batch Sizes</h3>
               <p className="feature-text">
-                We prioritize quality over quantity. Small batches ensure personal attention to every student, ensuring no one learning kid gets unseen daily.
+                We prioritize quality over quantity. Small batches ensure personal attention to every student, so no one gets unnoticed.
               </p>
             </div>
 
@@ -49,7 +49,7 @@ const UdaanInstitute: React.FC = () => {
               </div>
               <h3 className="feature-title">Expert Batch Faculty</h3>
               <p className="feature-text">
-                Learn from the best. Our faculty consists of experts (BTech, IIT, Medical) who have mentored all India rankers in JEE & NEET.
+                Learn from the best. Our faculty consists of experts (BTech, IIT, Medical) who have mentored All India Rankers in JEE & NEET.
               </p>
             </div>
 
@@ -71,7 +71,7 @@ const UdaanInstitute: React.FC = () => {
               </div>
               <h3 className="feature-title">Personal Mentoring</h3>
               <p className="feature-text">
-                Dedicated mentors for disciplined goal tracking and one-on-one guidance. We maintain unwavered and ongoing support to bring everyone up!
+                Dedicated mentors for disciplined goal tracking and one-on-one guidance. We maintain unwavering and ongoing support to uplift every student.
               </p>
             </div>
 
@@ -135,7 +135,7 @@ const UdaanInstitute: React.FC = () => {
               <h3 className="course-name">Foundation</h3>
               <ul className="course-features">
                 <li>Early JEE/NEET Prep</li>
-                <li>Strong Concept-Base</li>
+                <li>Strong Concept Base</li>
               </ul>
               <Link to="/courses" className="course-link">Know More</Link>
             </div>
@@ -196,7 +196,7 @@ const UdaanInstitute: React.FC = () => {
                     <span className="material-icons">school</span>
                   </div>
                   <div>
-                    <h4 className="point-title">Experienced IITians & Doctors</h4>
+                    <h4 className="point-title">Experienced IITian & Doctor Faculty</h4>
                     <p className="point-text">
                       All core subjects are taught by faculty who have cleared these exams themselves.
                     </p>

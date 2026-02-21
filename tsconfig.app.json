@@ -17,5 +17,5 @@
     "noFallthroughCasesInSwitch": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo"
   },
-  "include": ["App.tsx", "src", "home", "courses", "fees", "contact", "Admission", "Why_udan'"]
+  "include": ["App.tsx", "src", "home", "courses", "fees", "contact", "Admission", "Why_udan'", "tetimonila", "director"]
 }
