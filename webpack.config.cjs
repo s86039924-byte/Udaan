@@ -41,7 +41,7 @@ module.exports = {
     port: Number(process.env.PORT || 30010),
     historyApiFallback: true,
     hot: true,
-    open: true,
+    open: false,
   },
   devtool: "source-map",
 };
