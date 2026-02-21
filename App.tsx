@@ -1,4 +1,4 @@
-import { createContext, useEffect, useLayoutEffect, useMemo, useState, type ReactNode } from "react";
+import { Suspense, createContext, lazy, useEffect, useLayoutEffect, useMemo, useState, type ReactNode } from "react";
 import {
   BrowserRouter,
   Navigate,
@@ -9,15 +9,16 @@ import {
 } from "react-router-dom";
 import CommonFooter from "./components/CommonFooter";
 import CommonNavbar from "./components/CommonNavbar";
-import Admission from "./Admission/admission";
-import Contact from "./contact/contact";
-import Courses from "./courses/course";
-import DirectorPage from "./director/director";
-import Fees from "./fees/fees";
 import Home from "./home/home";
-import Testimonial from "./tetimonila/testimonila";
-import WhyUdaan from "./Why_udan'/why";
-import DostPage from "./dost/page";
+
+const Courses = lazy(() => import("./courses/course"));
+const DirectorPage = lazy(() => import("./director/director"));
+const Fees = lazy(() => import("./fees/fees"));
+const Admission = lazy(() => import("./Admission/admission"));
+const WhyUdaan = lazy(() => import("./Why_udan'/why"));
+const Testimonial = lazy(() => import("./tetimonila/testimonila"));
+const Contact = lazy(() => import("./contact/contact"));
+const DostPage = lazy(() => import("./dost/page"));
 
 type Theme = "light" | "dark";
 
@@ -121,6 +122,14 @@ const NotFound = () => {
   );
 };
 
+const PageLoader = () => (
+  <main className="page">
+    <section className="hero">
+      <h1>Loading...</h1>
+    </section>
+  </main>
+);
+
 const App = () => {
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
@@ -135,15 +144,15 @@ const App = () => {
           <Route element={<AppLayout />}>
             <Route path="/" element={<Navigate to="/home" replace />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/our-director" element={<DirectorPage />} />
-            <Route path="/fees" element={<Fees />} />
-            <Route path="/admission" element={<Admission />} />
-            <Route path="/why-udaan" element={<WhyUdaan />} />
-            <Route path="/testimonial" element={<Testimonial />} />
+            <Route path="/courses" element={<Suspense fallback={<PageLoader />}><Courses /></Suspense>} />
+            <Route path="/our-director" element={<Suspense fallback={<PageLoader />}><DirectorPage /></Suspense>} />
+            <Route path="/fees" element={<Suspense fallback={<PageLoader />}><Fees /></Suspense>} />
+            <Route path="/admission" element={<Suspense fallback={<PageLoader />}><Admission /></Suspense>} />
+            <Route path="/why-udaan" element={<Suspense fallback={<PageLoader />}><WhyUdaan /></Suspense>} />
+            <Route path="/testimonial" element={<Suspense fallback={<PageLoader />}><Testimonial /></Suspense>} />
             <Route path="/tetimonila" element={<Navigate to="/testimonial" replace />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/dost" element={<DostPage />} />
+            <Route path="/contact" element={<Suspense fallback={<PageLoader />}><Contact /></Suspense>} />
+            <Route path="/dost" element={<Suspense fallback={<PageLoader />}><DostPage /></Suspense>} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
