@@ -49,6 +49,23 @@ const DirectorPage = () => {
             <p>Contact - 87931 54040 / 87931 64040</p>
             <p>Website - Udaanainstitute.com</p>
           </div>
+
+          <section className="faculty-profile" aria-label="Faculty Profile">
+            <h2 className="faculty-profile-title">Faculty Profile</h2>
+            <div className="faculty-profile-card">
+              <img
+                className="faculty-profile-photo"
+                src="/Suraj Ukey .png"
+                alt="Suraj Ukey"
+              />
+              <div className="faculty-profile-info">
+                <h3 className="faculty-profile-name">Suraj Ukey</h3>
+                <p className="faculty-profile-role">Senior Math Faculty</p>
+                <p className="faculty-profile-detail">5+ Years Experience</p>
+                <p className="faculty-profile-detail">IIT Roorkee</p>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </div>
