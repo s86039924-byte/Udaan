@@ -51,6 +51,29 @@ body::-webkit-scrollbar {
   padding-top: 0;
 }
 
+html.dost-page,
+body.dost-page,
+body.dost-page #root {
+  background: #ffffff;
+}
+
+body.dost-page {
+  overflow: hidden;
+}
+
+body.dost-page .app-content,
+body.dost-page .app-content--no-nav {
+  padding-top: 0 !important;
+  min-height: 100vh;
+}
+
+body.dost-page .common-nav,
+body.dost-page .common-footer,
+body.dost-page .call-float,
+body.dost-page .whatsapp-float {
+  display: none !important;
+}
+
 .common-nav__inner {
   width: 100%;
   margin: 0;

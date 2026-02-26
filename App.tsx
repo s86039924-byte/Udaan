@@ -67,6 +67,18 @@ const AppLayout = () => {
   const location = useLocation();
   const hideNavigationAndFooter = location.pathname.startsWith("/dost");
 
+  useEffect(() => {
+    const isDostPage = location.pathname.startsWith("/dost");
+
+    document.documentElement.classList.toggle("dost-page", isDostPage);
+    document.body.classList.toggle("dost-page", isDostPage);
+
+    return () => {
+      document.documentElement.classList.remove("dost-page");
+      document.body.classList.remove("dost-page");
+    };
+  }, [location.pathname]);
+
   return (
     <>
       <ScrollToTop />
