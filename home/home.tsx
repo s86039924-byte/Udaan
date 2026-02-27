@@ -179,6 +179,8 @@ const UdaanInstitute: React.FC = () => {
                 src="/foot.jpg"
                 alt="Faculty member"
                 className="faculty-img"
+                loading="lazy"
+                decoding="async"
               />
               
             </div>

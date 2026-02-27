@@ -39,7 +39,9 @@ const Scholarships: React.FC = () => {
               <img
                 alt="Students Studying Group"
                 className="hero-image"
-                src="cheer.png"
+                src="/cheer.png"
+                loading="eager"
+                decoding="async"
               />
             </div>
           </div>

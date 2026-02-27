@@ -11,6 +11,8 @@ const DirectorPage = () => {
                 className="director-photo"
                 src="/director.png"
                 alt="Director portrait"
+                loading="eager"
+                decoding="async"
               />
               <h2 className="director-name">Rupesh Kumar Sir</h2>
               <p className="director-role">( Director )</p>
@@ -57,6 +59,8 @@ const DirectorPage = () => {
                 className="faculty-profile-photo"
                 src="/Suraj Ukey .png"
                 alt="Suraj Ukey"
+                loading="lazy"
+                decoding="async"
               />
               <div className="faculty-profile-info">
                 <h3 className="faculty-profile-name">Suraj Ukey</h3>

@@ -116,6 +116,8 @@ const HomeHero = () => {
           <img
             src="/profile.png"
             alt="Students studying together"
+            loading="eager"
+            decoding="async"
           />
         </div>
       </div>

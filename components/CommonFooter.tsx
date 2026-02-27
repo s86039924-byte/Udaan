@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./layout.css";
 
+const UDAAN_LOGO_SRC = "/udaan_logo.png?v=20260227";
+
 const CommonFooter = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -12,8 +14,10 @@ const CommonFooter = () => {
         <section className="common-footer__brand-block">
           <img
             className="common-footer__logo-slot"
-            src="/udaan_logo.png"
+            src={UDAAN_LOGO_SRC}
             alt="Udaan Institute logo"
+            loading="lazy"
+            decoding="async"
           />
           <p>
             Premier coaching institute for Foundation, NEET, and JEE

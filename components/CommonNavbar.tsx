@@ -17,6 +17,8 @@ const navItems = [
   { href: "/contact", label: "Contact" },
 ];
 
+const UDAAN_LOGO_SRC = "/udaan_logo.png?v=20260227";
+
 const CommonNavbar = ({ activePath }: CommonNavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -28,8 +30,10 @@ const CommonNavbar = ({ activePath }: CommonNavbarProps) => {
         <Link className="common-nav__brand" to="/home" aria-label="Udaan home">
           <img
             className="common-nav__logo-slot"
-            src="/udaan_logo.png"
+            src={UDAAN_LOGO_SRC}
             alt="Udaan Institute logo"
+            loading="eager"
+            decoding="async"
           />
         </Link>
 

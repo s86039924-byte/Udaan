@@ -93,7 +93,7 @@ const AppLayout = () => {
           aria-label="Call +91 87931 54040"
         >
           <span className="call-float__icon" aria-hidden="true">
-            <img className="call-float__icon-image" src="/call.png" alt="" />
+            <img className="call-float__icon-image" src="/call.png" alt="" loading="eager" decoding="async" />
           </span>
           <span className="call-float__text">
             <strong>Call Now</strong>
@@ -110,7 +110,7 @@ const AppLayout = () => {
           aria-label="Chat on WhatsApp at +91 87931 54040"
         >
           <span className="whatsapp-float__icon" aria-hidden="true">
-            <img className="whatsapp-float__icon-image" src="/wp.png" alt="" />
+            <img className="whatsapp-float__icon-image" src="/wp.png" alt="" loading="eager" decoding="async" />
           </span>
           <span className="whatsapp-float__text">
             <strong>WhatsApp</strong>

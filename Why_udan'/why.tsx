@@ -127,6 +127,8 @@ const WhyUdaan: React.FC = () => {
                   src="/computer.jpg"
                   alt="Student using laptop for learning"
                   className="laptop-img"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="laptop-quote">
                   "Like a personal tutor for every student"

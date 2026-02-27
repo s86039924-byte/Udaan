@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "webpack serve --config webpack.config.cjs --mode development",
     "start": "node scripts/start.cjs",
-    "build": "webpack --config webpack.config.cjs --mode production"
+    "build": "webpack --config webpack.config.cjs --mode production && cp -r public/. dist/"
   },
   "dependencies": {
     "react": "^18.3.1",
